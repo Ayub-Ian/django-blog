@@ -42,17 +42,22 @@ EMAIL_USE_TLS = True
 
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
-    'taggit',
-    'blog.apps.BlogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # third party
+    'taggit',
+    # local
+    'blog.apps.BlogConfig',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
